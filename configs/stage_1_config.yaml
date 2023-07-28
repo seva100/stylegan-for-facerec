@@ -1,0 +1,48 @@
+dataset_path: 
+- <your path to the prior dataset folder>
+img_list: <path to the .txt file with paths to all the samples in prior dataset>
+
+experiment: stage_1
+seed: null
+save_epoch: 10
+sanity_steps: 1
+max_epoch: 1000
+scheduler: null
+val_check_percent: 1.0
+val_check_interval: 1
+resume: null
+limit_train_batches: 4000
+
+# num_mapping_layers: 2
+num_mapping_layers: 8    # correction
+
+lr_g: 0.002
+lr_d: 0.00235
+lazy_gradient_penalty_interval: 16
+lazy_path_penalty_after: 0
+lazy_path_penalty_interval: 4
+latent_dim: 512
+# lambda_gp: 0.0256
+# lambda_gp: 1.0
+lambda_gp: 4.0
+lambda_plp: 2
+ada_start_p: 0.  #to disable set to -1
+ada_target: 0.6
+ada_interval: 4
+ada_fixed: False
+generator: stylegan2
+
+image_size: 128
+num_eval_images: 4000
+num_vis_images: 128
+batch_size: 8
+batch_gpu: 8
+num_workers: 32
+
+wandb_main: False
+suffix: ''
+
+hydra:
+  output_subdir: null # Disable saving of config files. We'll do that ourselves.
+  run:
+    dir: .
