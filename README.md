@@ -78,9 +78,7 @@ python facesets/mtcnn_crop_align.py \
     --n_threads <number of parallel threads on the same GPU>
 ```
 
-This procedure yields roughly 5M images in AfricanFaceSet and 3M images in AsianFaceSet on our side. The published lists of video IDs have been collected around January 2022. <!-- and have been actualized recently before this code and datasets release, accounting for deleted or restricted videos.-->
-
-* Note (July 28, 2023): the index accesible via the form is currently being actualized to account for deleted or restricted videos. The index will be released by the link soon (approx. within 1 week).
+This procedure yields roughly 5M images in AfricanFaceSet and 3M images in AsianFaceSet on our side. The published lists of video IDs have been collected around January 2022 and have been actualized in July 2023 this code and datasets release, accounting for deleted or restricted videos.
 
 Since we require a .txt file with the list of all images in the Stage 1 and Stage 2 of training, such a list can be compiled via:
 
