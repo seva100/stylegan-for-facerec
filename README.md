@@ -102,7 +102,7 @@ The data released under via the [form](https://forms.gle/kmbuvNgk6aDnNWaW8) and 
 
 ### RB-WebFace
 
-Our RB-WebFace benchmark is constructed as a partition of WebFace-42M (a cleaned version of WebFace-260M), specifying positive and negative pairs for identities that were predicted to be likely belonging to the African, Caucasian, Indian, East Asian ethnical groups. This subdivision was first performed via a neural classifier, originally trained on BUPT ethnic group labels, and then refined by leaving only those identities, for which the classifier consistently predicted the same group for more than 80\% of their pictures in WebFace-42M.
+Our RB-WebFace benchmark is constructed as a partition of WebFace-42M (a cleaned version of WebFace-260M), specifying positive and negative pairs for identities that were predicted to be likely belonging to the African, Caucasian, Indian, East Asian ethnical groups. This subdivision was first performed via a neural classifier, originally trained on BUPT ethnic group labels, and then refined by leaving only those identities, for which the classifier consistently predicted the same group for more than 80\% of their pictures in WebFace-42M. We release the inference code for the classifier [in this repo](https://github.com/seva100/ethnicity-classifier).
 
 We release the IDs of people under the same [form](https://forms.gle/kmbuvNgk6aDnNWaW8), clustered into each ethnic group in `RB-WebFace partitions/estimated_ethnicities`, and group-wise positive and negative pairs in `RB-WebFace/pairs`. 
 
