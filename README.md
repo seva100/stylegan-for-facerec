@@ -209,7 +209,7 @@ Checkpoints for the baseline and pretrained ArcFace R-{34,50,100} models are ava
 
 ## Known issues
 
-* Likely due to SGD used as a main optimizer in Stage 3 (both in our work and in [face-evolve](https://github.com/ZhaoJ9014/face.evoLVe)), the ArcFace baseline network sometimes converges to a bad local minima (one can notice that by loss going on plateau of the value around ~20). Restarting with a different batch size or number of GPUs helped in these cases. The same sometimes happened for other baselines methods or when training on 1% of labeled data. We never encountered that with a good initialization of the network (e.g. from our Stage 2).
+* Likely due to SGD used as a main optimizer in Stage 3 (both in our work and in [face-evolve](https://github.com/ZhaoJ9014/face.evoLVe)), the ArcFace baseline network sometimes converges to a bad local minimum (one can notice that by loss going on plateau of the value around ~20). Restarting with a different batch size or number of GPUs helped in these cases. The same sometimes happened for other baselines methods or when training on 1% of labeled data. We have never encountered that with a good initialization of the network (e.g. from our Stage 2).
 
 ## Licenses
 
